@@ -1,0 +1,29 @@
+routes:
+  #/: index
+
+collections:
+  /:
+    permalink: /{slug}/
+    template: index
+  /fr/blog/:
+    permalink: /fr/blog/{slug}/
+    template: index
+    filter: tag:hash-blog+tag:hash-fr
+  /en/blog/:
+    permalink: /en/blog/{slug}/
+    template: index
+    filter: tag:hash-blog+tag:hash-en
+  /fr/howto/:
+    permalink: /fr/howto/{slug}/
+    template: index
+    filter: tag:hash-howto+tag:hash-fr
+    #data: tag.work
+  /en/howto/:
+    permalink: /en/howto/{slug}/
+    template: index
+    filter: tag:hash-howto+tag:hash-en
+    #data: tag.work
+
+
+taxonomies:
+  tag: /theme/{slug}/
