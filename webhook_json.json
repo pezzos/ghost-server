@@ -1,0 +1,14 @@
+{"webhook": 
+  {"name": "ghost-server-webhook",
+   "targetPipeline": "ghost-server-pipeline",
+   "targetAction": "Source",
+   "filters": [
+    {
+      "jsonPath": "$.ref", 
+      "matchEquals": "refs/heads/{Branch}"
+    }
+   ],
+   "authentication": "GITHUB_HMAC",
+   "authenticationConfiguration": {"SecretToken":"SECRETTOCHANGE"}
+  }
+}
