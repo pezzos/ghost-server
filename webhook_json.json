@@ -1,3 +1,4 @@
+// https://docs.aws.amazon.com/codepipeline/latest/userguide/pipelines-webhooks-create.html
 {"webhook": 
   {"name": "ghost-server-webhook",
    "targetPipeline": "ghost-server-pipeline",
