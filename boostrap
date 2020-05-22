@@ -1,3 +1,0 @@
-#!/bin/sh
-cd $LAMBDA_TASK_ROOT
-aws ecs update-service --cluster gs-cluster --service gs-container-service --desired-count 1
